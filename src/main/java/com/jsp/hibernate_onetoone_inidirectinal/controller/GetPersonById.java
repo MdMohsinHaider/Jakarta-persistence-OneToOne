@@ -8,8 +8,8 @@ public class GetPersonById {
 	public static void main(String[] args) {
 		PersonAadharDao aadharDao = new PersonAadharDao();
 		
-		Person person = aadharDao.getPersonByIdDao(10);
-		
+//		Person person = aadharDao.getPersonByIdDao(10);
+//		
 //		if (person!=null) {
 //			System.out.println(person);
 //			

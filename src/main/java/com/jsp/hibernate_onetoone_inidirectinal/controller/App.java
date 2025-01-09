@@ -17,7 +17,6 @@ public class App {
     	long number = 100000000000L + (long)(random.nextDouble() * 900000000000L);
     	
     	PersonAadharDao aadharDao = new PersonAadharDao();
-    	
         Aadhar aadhar = new Aadhar(number,"haish", LocalDate.parse("1947-08-10"),"ABC Adresess");
 //        Person person =  new Person(101,"james","jemes@gmail.com",91983774,aadhar);
         Person person2 = new Person();
@@ -26,7 +25,9 @@ public class App {
         person2.setPhone(916476785);
         person2.setAadhar(aadhar);
         
-        aadharDao.savePersonAadharDao(person2, aadhar);
+        aadharDao.savePersonAadharDao(person2);  
         
+        
+        GetPersonById byId = new GetPersonById()
     }
 }

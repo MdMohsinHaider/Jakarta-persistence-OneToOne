@@ -59,6 +59,6 @@ public class PersonAadharDao {
 	}
 	
 	List<Person> getAllPersonAdharDao(){
-		return em.createQuery("from Person").getResultList();
+		return em.createQuery("from Person",Person.class).getResultList();
 	}
 }

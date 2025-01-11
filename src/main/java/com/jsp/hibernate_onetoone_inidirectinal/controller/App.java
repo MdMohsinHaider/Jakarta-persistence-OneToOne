@@ -28,6 +28,6 @@ public class App {
         aadharDao.savePersonAadharDao(person2);  
         
         
-        GetPersonById byId = new GetPersonById()
+        GetPersonById byId = new GetPersonById();
     }
 }

@@ -8,14 +8,14 @@ public class GetPersonById {
 	public static void main(String[] args) {
 		PersonAadharDao aadharDao = new PersonAadharDao();
 		
-		Person person = aadharDao.getPersonByIdDao(11);
+		Person person = aadharDao.getPersonByIdDao(2);
 		
 		if (person!=null) {
 			System.out.println(person);
 			
 			Aadhar aadhar = person.getAadhar();
 			if (aadhar !=null) {
-				if (aadhar.getAadharNumber()==11) {
+				if (aadhar.getAadharNumber()==2) {
 					System.out.println("aadhar Not Valid");
 					System.out.println(aadhar);
 				}else {
